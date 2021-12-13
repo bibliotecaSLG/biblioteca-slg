@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background: linear-gradient(to bottom, #757474, #2f2e2e);
+    padding: 10px;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-style: normal;
+    padding: 10px;
+}
+
+/* Menú */
+.sinSubrayado{
+    text-decoration: none;
+ }
+ 
+.nav{
+    background-color: rgb(255, 213, 23);
+    padding: 3px;
+    margin: 5px;
+    width: 480px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.menu{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    font-weight: bold;  
+    padding: 5px;
+ }
+
+li{
+    display: inline;
+    position: relative;
+}
+.subMenu{
+     display: none;
+     position: absolute;
+     left: 0px;
+     background-color: rgb(255, 213, 23);
+     text-align: left;
+     padding-left: 3px;
+     font-size: 12px;
+     font-style: normal;
+ }
+
+ul ul li{
+    display: block;
+}
+ul li:hover ul{
+    display: block;
+ }
+/* Menú */
+
+h2{
+     color: rgb(236, 195, 12);
+     font-size: 50px;
+     padding-left: 30px;
+}
+
+p{
+     color: rgb(63, 63, 63);
+     text-align: justify;
+}
+
+.borde{
+     border: solid 2px black;
+}
+
+footer{
+    background: linear-gradient(to bottom, #2f2e2e,#615d5a);
+    color: #eeeeed;
+    font-weight: normal;
+    padding-right: 8px;
+    padding-top: 5px;
+    flex: 1;   
+    font-size: 12px;
+}
+
+/*Grid Footer*/
+.info{
+    grid-area: info;
+}
+.copy{
+    grid-area: cop;
+    font-size: 10px;
+}
+.escudo{
+    grid-area: escudo;
+}
+.gridFooter{
+    display: grid;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-areas: 
+    "info escudo"
+    "cop cop"
+    ;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: auto;
+}
+
+/*Grid para Historia*/
+.div1{
+    grid-area: div1;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+.div2{
+    grid-area: div2;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.f1{
+    grid-area: foto1;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.f1:hover{
+    transform: scale(2);
+    position: relative;
+    bottom: -120px;
+    left: -400px;   
+}
+.f2{
+    grid-area: foto2;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.f2:hover{
+    transform: scale(2);
+    position: relative;
+    bottom: 120px;
+    left: 400px;
+}
+.gridHistoria{
+    display: grid;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-areas: 
+    "div1 div1 foto1"
+    "foto2 div2 div2"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+/* Fin de Grid para Historia*/
+
+/*Mobile First*/
+/* Smartphone */
+@media (max-width: 599px){
+    body {
+        font-size: 0.75rem;
+    }
+    li{
+        display: block;
+        position: relative;
+    }
+    
+}
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px){
+    body {
+        font-size: 1rem;
+    }
+    li{
+        display: block;
+        position: relative;
+    }
+}
+
+/* DEsktop */
+@media (min-width: 1024px){
+    .main{
+        padding: 20px;
+     }
+    }
+    
