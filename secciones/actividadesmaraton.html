@@ -15,46 +15,265 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"></head>
 </head>
-<body>
+<body id="bodyColor">
     <header>
-        <a href="../index.html" class="sinSubrayado"><h1>Biblioteca San Luis Gonzaga</h1></a>
-
-        <nav class="nav">
-            <ul>
-                <a href="historia.html" class="menu"><li>Historia</li></a>
-                <a href="servicio.html" class="menu"><li>Servicio</li></a>
-                <li class="menu"> Actividades 
-                    <ul class="subMenu">
-                        <a href="actividadestalleres.html" class="menu"><li>Talleres</li></a>
-                        <a href="actividadesvisitas.html" class="menu"><li>Visitas</li></a>
-                        <a href="actividadesmaraton.html" class="menu"><li>Maratón de Lectura</li></a>
+        <h1 class="visually-hidden">Biblioteca San Luis Gonzaga</h1>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../imagenes/LOGO SLG.png" class="logoBiblio" alt="Logo SLG"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicio.html">Servicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Actividades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="actividadestalleres.html">Talleres</a></li>
+                      <li><a class="dropdown-item" href="actividadesvisitas.html">Visitas</a></li>
+                      <li><a class="dropdown-item" href="actividadesmaraton.html">Maratón de Lectura</a></li>
                     </ul>
-                </li>
-                <a href="noticiasynovedades.html" class="menu"><li>Noticias y novedades</li></a>
-                <a href="contacto.html" class="menu"><li>Contacto</li></a>
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main class="main">
-        <h2>Actividades - Maratón de Lectura</h2>
-        <p>Descripción de la maratón</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z6Hij2CMlm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 id="h2maraton">Actividades - Maratón de Lectura</h2>
+        <div class="container" id="containerMaraton">
+            <p>La Maratón Nacional de Lectura es una celebración que invita a todas las instituciones educativas a que se sumen a una jornada de lectura. Este año la 19.a Maratón Nacional de Lectura tiene como lema Relatos se oyen al pasar. Una Maratón con la literatura en boca de todos.
+                La Maratón Nacional de la Lectura se celebró el 24 de septiembre: ese día millones de chicos, jóvenes y adultos estuvieron conectados en todos los rincones del país -desde las instituciones o desde casa- leyendo y disfrutando de actividades de lectura.
+                En nuestro colegio estuvo organizado desde biblioteca con la participación de alumnos de secundaria que fueron lectores para los niños de primaria.
+                </p>
+        </div>
+        <div class="container" id="containerMaraton2">
+            <h3 id="h3maraton">Participantes</h3>
+            <p> <strong>Secundaria:</strong> todos los alumnos elaboran de textos para los “banderines poéticos”.</p>
+            <p><strong>Secundaria: </strong> 3 alumnos seleccionados por curso son lectores en un aula de primaria.</p>
+            <p><strong>Primaria:</strong> todos los alumnos son receptores y comentadores de las lecturas o en el aula, son los receptores de los “banderines poéticos”</p>
+            <p><strong>Docentes:</strong> acompañan la tarea en cada curso secundario desde las áreas Prácticas del Lenguaje / Literatura / Bibliotecarias.</p>
+        </div>
+        <div class="container">
+            <h3 id="h3maraton2">Esquema de lecturas y teextos sugeridos por edades</h3>
+            <div>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">LECTORES</th>
+                        <th scope="col">AUDIENCIA</th>
+                        <th scope="col">TEXTOS RECOMENDADOS/ SUGERIDOS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1ro. 1ra.</td>
+                        <td>1ro. 1ra.</td>
+                        <td>Historias con dinosaurios.</td>
+                      </tr>
+                      <tr>
+                        <td>1ro. 2da.</td>
+                        <td>1ro. 2da.</td>
+                        <td>Historias con dinosaurios.</td>
+                      </tr>
+                      <tr>
+                        <td>2do. 1ra.</td>
+                        <td>2do. 1ra.</td>
+                        <td>Cuentos de duendes, magos, dragones, personajes fantásticos.</td>
+                      </tr>
+                      <tr>
+                        <td>2do. 2da.</td>
+                        <td>2do. 2da.</td>
+                        <td>Cuentos de duendes, magos, dragones, personajes fantásticos.</td>
+                      </tr>
+                      <tr>
+                        <td>3ro. 1ra.</td>
+                        <td>3ro. 1ra.</td>
+                        <td>Relatos con fantasmas.</td>
+                      </tr>
+                      <tr>
+                        <td>3ro. 2da.</td>
+                        <td>3ro. 2da.</td>
+                        <td>Relatos con fantasmas.</td>
+                      </tr>
+                      <tr>
+                        <td>4to. Soc.</td>
+                        <td>4to. 1ra.</td>
+                        <td>Cuentos de humor.</td>
+                      </tr>
+                      <tr>
+                        <td>4to. Téc.</td>
+                        <td>4to. 2da.</td>
+                        <td>Cuentos de humor.</td>
+                      </tr>
+                      <tr>
+                        <td>5to. Soc.</td>
+                        <td>5to. 1ra.</td>
+                        <td>Cuentos de Terror en la escuela: “Terror en 6to B”.</td>
+                      </tr>
+                      <tr>
+                        <td>5to. Téc.</td>
+                        <td>5to. 2da.</td>
+                        <td>Cuentos de Terror en la escuela: “Terror en 6to B”.</td>
+                      </tr>
+                      <tr>
+                        <td>6to. Soc.</td>
+                        <td>6to. 1ra.</td>
+                        <td>Cuentos de terror: “Manos y Socorro “de Elsa Bornemann.</td>
+                      </tr>
+                      <tr>
+                        <td>6to. Téc.</td>
+                        <td>6to. 2da.</td>
+                        <td>Cuentos de terror: “Manos y Socorro “de Elsa Bornemann.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        <div class="container" id="containerMaraton3">
+                <h3 id="h3maraton3">Actividades</h3>
+                <div>
+                    <h4>Previas</h4>
+                    <div>
+                     <ol id="listaMaraton">
+                        <li id="listaColorM">
+                            <span id="textList">
+                                Todos los alumnos de secundaria elegirán textos literarios breves (minicuentos, haikus, limericks, adivinanzas, poemas) y harán al menos una copia cada uno, en papeles cuadrados de 10 cm x 10 cm.  Los entregarán a los docentes. Estos, a su vez, los entregarán a las bibliotecarias.
+                            </span> 
+                        </li>
+                        <br>
+                        <li id="listaColorM">
+                            <span id="textList">
+                                Las bibliotecarias elaborarán banderines de colores. Pegarán los textos producidos por secundaria en dichos banderines.
+                            </span> 
+                        </li>
+                        <br>
+                        <li id="listaColorM">
+                            <span id="textList">
+                                Los profesores de Prácticas del Lenguaje y Literatura designarán tres alumnos lectores (o narradores) por curso. Estos deberán ponerse en contacto con las bibliotecarias para definir en conjunto los textos a leer, de acuerdo con las edades de sus audiencias.
+                            </span> 
+                        </li>
+                        <br>
+                     </ol>
+                    </div>
+                </div>
+                <div>
+                    <h4>Durante </h4>
+                    <div>
+                     <ol id="listaMaraton2">
+                        <li id="listaColorM2">
+                            <span id="textList2">
+                                Las bibliotecarias coordinarán la disposición de banderines en el patio  
+                            </span> 
+                        </li>
+                        <br>
+                        <li id="listaColorM2">
+                            <span id="textList2">
+                                Los alumnos designados lectores concurrirán al aula de primaria asignada, en horario a confirmar.  Se realizará la lectura de los textos. Al finalizar, se les puede proponer a los oyentes que hagan comentarios y preguntas, pedirles que expresen opiniones, etc. (DURACIÓN: 60 MINUTOS).
+                            </span> 
+                        </li>
+                        <br>
+                        <li id="listaColorM2">
+                            <span id="textList2">
+                                Se les entrega un texto con ilustraciones para compartir, pintar y disfrutar.
+                            </span> 
+                        </li>
+                        <br>
+                        <li id="listaColorM2">
+                            <span id="textList2">
+                                Una vez concluida la actividad, y por turnos, los alumnos de secundaria, las docentes y bibliotecarias acompañarán a los alumnos a elegir su banderín.
+                            </span> 
+                        </li>
+                     </ol>
+                    </div>
+                </div>
+        </div>
+
+
+        </div>
+
+        <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/z6Hij2CMlm4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        <br>
     </main>
     
 
-    <footer class="gridFooter"> <!--Falta definir si los datos llevan iconos-->
-        <div class="info">
-            <h4 class="direc">Dirección: Av. Falndes 76</h4>
-            <br>
-            <h4 class="tel">Teléfono: 02323 49-7227</h4> 
-            <br>
-            <h4 class="hora">Horarios: lunes a viernes de 8 a 12 y de 13 a 17 hs</h4>
-        </div>
-        <br>
-        <h4 class="copy">Copyright © 2021 Biblioteca San Luis Gonzaga. Todos los derechos reservados.</h4>
-        <img src="../imagenes/escudo_islg_chico.jpg" class="escudo" alt="Escudo Instituto San Luis Gonzaga"> <!--LOGO ISLG-->
-    </footer>
+    <footer>
+        <section class="container-fluid sec-footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="card desc-box">
+                          <div class="card-body">
+                              <div class="card-title">Horarios</div>
+                              <div class="card-text" id="horarioLeft">
+                                .Lunes a viernes de 8 a 12 y de 13 a 17 hs
+                              </div>
+                              <br>
+                              <br>
+                      <a href="https://www.facebook.com/bibliotecaislg.nuestroslibros/"><img src="../imagenes/logo_face.png" alt="Facebook"></a>
+                      <a href="https://www.youtube.com/channel/UCxenjQ5adYyDehzcCoX1TDg"><img src="../imagenes/logo_youtube.png" alt="Youtube"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card desc-box">
+                          <div class="card-body">
+                              <div class="card-title">Contacto</div>
+                              <div class="card-text" id="contactoLeft">
+                                  <div class="row">
+                                      <div class="col">
+                                          <span>Dirección: Av. Flandes 76, Jáuregui, Luján, Buenos Aires - Argentina</span>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col">
+                                          <span>Teléfono: 02323 497-227 </span>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col">
+                                          <span><a href="mailto:bibliotecasanluisgonzaga@hotmail.com" id="mail-footer">Email: bibliotecasanluisgonzaga@hotmail.com</a></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col text-center">
+                    <img src="../imagenes/escudo_islg.jfif" class="logoISLG" alt="Escudo Instituto San Luis Gonzaga"> 
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="container-fluid sec-sub-footer">
+          <div class="container">
+                  <div class="copy">
+                      <span>.Copyright © 2021 Biblioteca San Luis Gonzaga. Todos los derechos reservados. // Sol Coria Web Desing</span>
+                  </div>
+          </div>
+      </section>
+      </footer>
+
     <script src="../js/bootstrap.js"></script>
 </body>
 </html>

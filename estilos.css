@@ -12,6 +12,10 @@ body {
     justify-content: flex-start;
     align-content: center; }
 
+#bodyColor{
+    background-color: #e7e7e7;
+}
+
 header{
     width: 100%;
     background-color: #2f2e2e;
@@ -63,8 +67,10 @@ p{
 }
 
 
-
-
+#h2novedades{
+    font-size: 60px;
+    padding-left: 70px;
+}
 
 /*Footer*/
 #contactoLeft{
@@ -183,14 +189,196 @@ p{
 }
 /* Fin de Grid para Historia*/
 
+/*Servicio*/
+#h2servicio{
+    font-size: 60px;
+    padding-left: 70px;
+}
+
+#containerServicio{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#containerPrestamo{
+    background-color: #f7f7f7;
+    font-size: 15px;
+}
+
+#listaLibros{
+    list-style-type: square;
+}
+
+#listaColor{
+    color: rgb(236, 195, 12);
+}
+
+#texList{
+    color: black;
+}
+
+#h3servicio{
+    color:rgb(236, 195, 12);
+    font-weight: bold;
+}
+
+.carousel-inner img {
+    margin: auto;
+  }
+
 /*Talleres*/
-section {
-    width: 1080px;
-    padding-left: 5px; }
-section article {
-      width: 360px; }
-section article p {
-        width: 358px; }
+#h2talleres{
+    font-size: 60px;
+    padding-left: 70px;
+}
+
+#año{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#imgTalleres1{
+    grid-area: imgt1;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#divTalleres1{
+    grid-area: divt1;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    font-size: 17px;
+}
+#gridTalleres1{
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-areas: 
+    "imgt1 divt1 divt1"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#imgTalleres2{
+    grid-area: imgt2;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#divTalleres2{
+    grid-area: divt2;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    font-size: 17px;
+}
+#gridTalleres2{
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-areas: 
+    "imgt2 divt2 divt2"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#imgTalleres3{
+    grid-area: imgt3;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#divTalleres3{
+    grid-area: divt3;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    font-size: 17px;
+}
+#gridTalleres3{
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-areas: 
+    "imgt3 divt3 divt3"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+/*Maraton*/
+#h2maraton{
+    font-size: 60px;
+    padding-left: 70px;
+}
+
+#containerMaraton{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#containerMaraton2{
+    background-color: #f7f7f7;
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+#h3maraton{
+    color:rgb(236, 195, 12);
+    font-weight: bold;
+}
+#h3maraton2{
+    color:rgb(236, 195, 12);
+    font-weight: bold;
+}
+#h3maraton3{
+    color:rgb(236, 195, 12);
+    font-weight: bold;
+}
+#containerMaraton3{
+    background-color: #f7f7f7;
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+#listaMaraton{
+    list-style-type: square;
+}
+#listaColorM{
+    color: rgb(236, 195, 12);
+}
+#textList{
+    color: black;
+}
+#listaMaraton2{
+    list-style-type: square;
+}
+#listaColorM2{
+    color: rgb(236, 195, 12);
+}
+#textList2{
+    color: black;
+}
+
+
+/*Contacto*/
+#h2contacto{
+    font-size: 60px;
+    padding-left: 70px;
+}
+
+
 
 /*Mobile First*/
 
@@ -200,6 +388,11 @@ section article p {
         margin: 0;
         padding: 0;
     }
+
+    #nov{
+        padding: 0cm;
+        margin: 0cm;
+    }
     
     body {
         font-size: 0.75rem;
@@ -208,6 +401,11 @@ section article p {
         display: block;
         position: relative;
     }
+
+    #h2novedades{
+        font-size: 30px;
+    }
+
    
     #h2historia{
         font-size: 30px;
@@ -263,6 +461,111 @@ section article p {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    .logoISLG {
+        width: 63px;
+        height: 90px;
+    }
+    .logoBiblio{
+        width: 109px;
+        height: 53px;
+    }
+    .main{
+        margin-top: 120px; z-index:1;
+    
+    }
+    #h2servicio{
+        font-size: 30px;
+    }
+
+    #h2talleres{
+        font-size: 30px;
+    }
+    #imgTalleres1{
+        grid-area: imgt1;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #divTalleres1{
+        grid-area: divt1;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    #gridTalleres1{
+        display: grid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-areas: 
+        "divt1"
+        "imgt1 "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+    #imgTalleres2{
+        grid-area: imgt2;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #divTalleres2{
+        grid-area: divt2;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    #gridTalleres2{
+        display: grid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-areas: 
+        "divt2"
+        "imgt2"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #imgTalleres3{
+        grid-area: imgt3;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #divTalleres3{
+        grid-area: divt3;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    #gridTalleres3{
+        display: grid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-areas: 
+        "divt3"
+        "imgt3"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #h2maraton{
+        font-size: 30px;
+    }
+    #h2contacto{
+        font-size: 30px;
+    }
 }
 /* Tablet */
 @media (min-width: 600px) and (max-width: 1023px){
@@ -277,6 +580,10 @@ section article p {
     li{
         display: block;
         position: relative;
+    }
+
+    #h2novedades{
+        font-size: 40px;
     }
     #h2historia{
         font-size: 40px;
@@ -331,6 +638,102 @@ section article p {
         ;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+    }
+    .logoISLG {
+        width: 63px;
+        height: 90px;
+    }
+    #h2servicio{
+        font-size: 40px;
+    }
+
+    #h2talleres{
+        font-size: 40px;
+    }
+    #imgTalleres1{
+        grid-area: imgt1;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #divTalleres1{
+        grid-area: divt1;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    #gridTalleres1{
+        display: grid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-areas: 
+        "divt1"
+        "imgt1 "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #imgTalleres2{
+        grid-area: imgt2;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #divTalleres2{
+        grid-area: divt2;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    #gridTalleres2{
+        display: grid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-areas: 
+        "divt2"
+        "imgt2"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #imgTalleres3{
+        grid-area: imgt3;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    #divTalleres3{
+        grid-area: divt3;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        font-size: 17px;
+    }
+    #gridTalleres3{
+        display: grid;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-areas: 
+        "divt3"
+        "imgt3"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    #h2maraton{
+        font-size: 40px;
+    }
+
+    #h2contacto{
+        font-size: 40px;
     }
 }
 

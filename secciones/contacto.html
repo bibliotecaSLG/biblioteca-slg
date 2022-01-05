@@ -15,72 +15,146 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"></head>
 </head>
-<body>
+<body id="bodyColor">
     <header>
-        <a href="../index.html" class="sinSubrayado"><h1>Biblioteca San Luis Gonzaga</h1></a>
+        <h1 class="visually-hidden">Biblioteca San Luis Gonzaga</h1>
         
-        <nav class="nav">
-            <ul>
-                <a href="historia.html" class="menu"><li>Historia</li></a>
-                <a href="servicio.html" class="menu"><li>Servicio</li></a>
-                <li class="menu"> Actividades 
-                    <ul class="subMenu">
-                        <a href="actividadestalleres.html" class="menu"><li>Talleres</li></a>
-                        <a href="actividadesvisitas.html" class="menu"><li>Visitas</li></a>
-                        <a href="actividadesmaraton.html" class="menu"><li>Maratón de Lectura</li></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../imagenes/LOGO SLG.png" class="logoBiblio" alt="Logo SLG"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicio.html">Servicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Actividades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="actividadestalleres.html">Talleres</a></li>
+                      <li><a class="dropdown-item" href="actividadesvisitas.html">Visitas</a></li>
+                      <li><a class="dropdown-item" href="actividadesmaraton.html">Maratón de Lectura</a></li>
                     </ul>
-                </li>
-                <a href="noticiasynovedades.html" class="menu"><li>Noticias y novedades</li></a>
-                <a href="contacto.html" class="menu"><li>Contacto</li></a>
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main class="main">
-        <h2>Formulario de Contacto</h2>
-        <hr>
-        <form action="">
-            <fieldset class="borde">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre"><br>
-                <label for="email">Mail:</label>
-                <input type="email" name="email"><br>  
-                <label for="telefono">Teléfono:</label>
-                <input type="number" name="telefono"><br> 
-                <br> 
-                <select name="Rol">
-                    <Option value="">Rol</Option> 
-                    <Option value="Padr">Padre</Option>
-                    <Option value="Alum">Alumno</Option>
-                    <Option value="Doc">Docente</Option>
-                    <Option value="Otr">Otro</Option>
-                </select> <br>
-                <br>
-                <div>Conoce la biblioteca</div>
-                <input type="checkbox" name="Acepta" value="1"><br>
-                <label for="consulta">Consultas:</label>
-                <textarea name="consulta" id="" cols="30" rows="10"></textarea>
-            </fieldset>
-        <br>
-        <input type="reset" value="Resetear información">
-        <input type="submit" value="Enviar">
 
-        </form>
+    <main class="main">
+        <h2 id="h2contacto">Formulario de Contacto</h2>
+        <div class="container">
+            <form action="">
+                <fieldset>
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" name="nombre"><br>
+                    <label for="email" class="form-label">Mail:</label>
+                    <input type="email" name="email"><br>  
+                    <label for="telefono" class="form-label">Teléfono:</label>
+                    <input type="number" name="telefono"><br> 
+                    <br> 
+                    <select name="Rol">
+                        <Option value="">Rol</Option> 
+                        <Option value="Padr">Padre</Option>
+                        <Option value="Alum">Alumno</Option>
+                        <Option value="Doc">Docente</Option>
+                        <Option value="Otr">Otro</Option>
+                    </select> <br>
+                    <br>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Conoce la biblioteca</label>
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Consultas:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10"></textarea>
+                      </div>
+                </fieldset>
+            <br>
+            <input type="reset" value="Resetear información">
+            <input type="submit" value="Enviar">
+    
+            </form>
+            <br>
+        </div>
+        
 
     </main>
     
-    <footer class="gridFooter"> <!--Falta definir si los datos llevan iconos-->
-        <div class="info">
-            <h4 class="direc">Dirección: Av. Falndes 76</h4>
-            <br>
-            <h4 class="tel">Teléfono: 02323 49-7227</h4> 
-            <br>
-            <h4 class="hora">Horarios: lunes a viernes de 8 a 12 y de 13 a 17 hs</h4>
-        </div>
-        <br>
-        <h4 class="copy">Copyright © 2021 Biblioteca San Luis Gonzaga. Todos los derechos reservados.</h4>
-        <img src="../imagenes/escudo_islg_chico.jpg" class="escudo" alt="Escudo Instituto San Luis Gonzaga"> <!--LOGO ISLG-->
-    </footer>
+    <footer>
+        <section class="container-fluid sec-footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="card desc-box">
+                          <div class="card-body">
+                              <div class="card-title">Horarios</div>
+                              <div class="card-text" id="horarioLeft">
+                                .Lunes a viernes de 8 a 12 y de 13 a 17 hs
+                              </div>
+                              <br>
+                              <br>
+                      <a href="https://www.facebook.com/bibliotecaislg.nuestroslibros/"><img src="../imagenes/logo_face.png" alt="Facebook"></a>
+                      <a href="https://www.youtube.com/channel/UCxenjQ5adYyDehzcCoX1TDg"><img src="../imagenes/logo_youtube.png" alt="Youtube"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card desc-box">
+                          <div class="card-body">
+                              <div class="card-title">Contacto</div>
+                              <div class="card-text" id="contactoLeft">
+                                  <div class="row">
+                                      <div class="col">
+                                          <span>Dirección: Av. Flandes 76, Jáuregui, Luján, Buenos Aires - Argentina</span>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col">
+                                          <span>Teléfono: 02323 497-227 </span>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col">
+                                          <span><a href="mailto:bibliotecasanluisgonzaga@hotmail.com" id="mail-footer">Email: bibliotecasanluisgonzaga@hotmail.com</a></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col text-center">
+                    <img src="../imagenes/escudo_islg.jfif" class="logoISLG" alt="Escudo Instituto San Luis Gonzaga"> 
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="container-fluid sec-sub-footer">
+          <div class="container">
+                  <div class="copy">
+                      <span>.Copyright © 2021 Biblioteca San Luis Gonzaga. Todos los derechos reservados. // Sol Coria Web Desing</span>
+                  </div>
+          </div>
+      </section>
+      </footer>
 
     <script src="../js/bootstrap.js"></script>
 </body>

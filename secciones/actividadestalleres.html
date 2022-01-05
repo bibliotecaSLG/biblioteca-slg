@@ -15,52 +15,192 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"></head>
 </head>
-<body>
+<body id="bodyColor">
     <header>
-        <a href="../index.html" class="sinSubrayado"><h1>Biblioteca San Luis Gonzaga</h1></a>
+        <h1 class="visually-hidden">Biblioteca San Luis Gonzaga</h1>
         
-        <nav class="nav">
-            <ul>
-                <a href="historia.html" class="menu"><li>Historia</li></a>
-                <a href="servicio.html" class="menu"><li>Servicio</li></a>
-                <li class="menu"> Actividades 
-                    <ul class="subMenu">
-                        <a href="actividadestalleres.html" class="menu"><li>Talleres</li></a>
-                        <a href="actividadesvisitas.html" class="menu"><li>Visitas</li></a>
-                        <a href="actividadesmaraton.html" class="menu"><li>Maratón de Lectura</li></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../imagenes/LOGO SLG.png" class="logoBiblio" alt="Logo SLG"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servicio.html">Servicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Actividades
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="actividadestalleres.html">Talleres</a></li>
+                      <li><a class="dropdown-item" href="actividadesvisitas.html">Visitas</a></li>
+                      <li><a class="dropdown-item" href="actividadesmaraton.html">Maratón de Lectura</a></li>
                     </ul>
-                </li>
-                <a href="noticiasynovedades.html" class="menu"><li>Noticias y novedades</li></a>
-                <a href="contacto.html" class="menu"><li>Contacto</li></a>
-            </ul>
-        </nav>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
+
     <main class="main">
-        <h2>Actividades - Talleres de lectura</h2>
-        <h3>Año</h3> <!--Pueden aparecer por año uno al lado del otro y con overflow scroll para abajo (posibilidad)-->
-        <h4>Titulo del taller 1er trimestre</h4>
-        <p>Descripción del taller más imagen</p>
-        <h4>Titulo del taller 2do trimestre</h4>
-        <p>Descripción del taller más imagen</p>
-        <h4>Titulo del taller 3er trimestre</h4>
-        <p>Descripción del taller más imagen</p>
+
+        <h2 id="h2talleres">Actividades - Talleres de lectura</h2>
+        <h3 id="año">2021</h3> 
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <div> <strong>1er trimestre:</strong> PIRÁMIDE DE MAYO, PRIMER MONUMENTO PATRIO </div>
+                </button>
+              </h4>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+               
+                <article id="gridTalleres1" >
+                    <div id="divTalleres1" class="row">
+                        <p></p>
+                        <p> <strong>Proyecto: “Pirámide de mayo, primer monumento patrio”,</strong> para nuestra institución educativa, en que participan todos los estudiantes, familias y docentes del nivel primario junto a las bibliotecarias.</p> 
+                        <p>Esta propuesta se ha diseñado para formar parte del primer proyecto del nivel primario desde la Biblioteca con textos literarios e informativos. </p>
+                        <h5>Fundamentación del Proyecto</h5>
+                        <p>La Biblioteca San Luis Gonzaga en sus comienzos funcionó en la sese del Club Flandria, ubicado en la calle España,  en un amplio salón del primer piso. En 1989 se realizó el traslado a un salón del Colegio San Luis Gonzaga (actuales salones de 3º y 6º año de primaria) permaneciendo abierta a la comunidad  y siendo utilizada por los alumnos de la institución.</p>
+                    </div>
+                    <div id="imgTalleres1" class="row">
+                        <img src="../imagenes/piramidemayo.jpg" class="img-fluid" alt="Primera imagen de la Biblioteca">
+                    </div>
+                </article>
+
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    <div> <strong>2do trimestre:</strong> UN ÁRBOL, UN TESORO </div>
+                </button>
+              </h4>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <article id="gridTalleres2" >
+                        <div id="divTalleres2" class="row">
+                            <p></p>
+                            <p> <strong>Proyecto: “Un árbol, un tesoro”,</strong> para nuestra institución educativa, en que participan todos los estudiantes, familias y docentes del nivel primario junto a las bibliotecarias.</p> 
+                            <p>Esta propuesta se ha diseñado para formar parte del segundo proyecto del nivel primario desde la Biblioteca “El árbol en la literatura”. </p>
+                            <h5>Fundamentación del Proyecto</h5>
+                            <p>Los árboles son algo familiar para el niño, forman parte del paisaje y nosotros sabemos que aportan infinitos beneficios a los seres humanos: alimentos, medicinas, madera, papel, sombra, purificar el aire, etc. 
+                                Nos proponemos desde la literatura a partir de su realidad y de la fantasía de los relatos iniciar a los niños, desde temprana edad a conocer, conservar querer, valorar y cuidar a los árboles. Al relacionarlos con la vida cotidiana del niño, lo llevaremos a expresar un comportamiento afectivo hacia ellos y a desarrollar un sentido de “compartir” con otros seres vivos el medio que los rodea.
+                            </p>
+                        </div>
+                        <div id="imgTalleres2" class="row">
+                            <img src="../imagenes/arbollibro.jpg" class="img-fluid" alt="Primera imagen de la Biblioteca">
+                        </div>
+                    </article>  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    <div> <strong>3er trimestre:</strong> UN PAÍS DE LEYENDAS </div>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <article id="gridTalleres3" >
+                        <div id="divTalleres3" class="row">
+                            <p></p>
+                            <p> <strong>Proyecto: “Un país de leyendas”,</strong> para nuestra institución educativa, en que participan todos los estudiantes, familias y docentes del nivel primario junto a las bibliotecarias.</p> 
+                            <p>Esta propuesta se ha diseñado para formar parte del tercer proyecto del nivel primario desde la Biblioteca. </p>
+                            <h5>Fundamentación del Proyecto</h5>
+                            <p>Las leyendas son relatos muy antiguos, en su mayoría de nuestros pueblos originarios creados para explicar el origen del mundo, y de los fenómenos naturales (como el fuego, la lluvia o el viento). 
+                                Tomar estos textos como marco atractivo, de fantasía para explicar la realidad, para que el niño pueda contextualizar esos relatos en una época y lugar determinado, es necesario para fomentar el conocimiento y la integración de los saberes y costumbres originarios de nuestro país.
+                                Creemos que este tipo de proyecto en la escuela fomenta la capacidad creadora del niño, despierta su imaginación y su búsqueda de respuestas nuevas, y lo sitúa frente a un pasado que puede modificar su presente para inspirar su futuro.
+                            </p>
+                        </div>
+                        <div id="imgTalleres3" class="row">
+                            <img src="../imagenes/leyendas.jpg" class="img-fluid" alt="Primera imagen de la Biblioteca">
+                        </div>
+                    </article>  
+
+                </div>
+              </div>
+            </div>
+          </div>
         
     </main>
     
 
-    <footer class="gridFooter"> <!--Falta definir si los datos llevan iconos-->
-        <div class="info">
-            <h4 class="direc">Dirección: Av. Falndes 76</h4>
-            <br>
-            <h4 class="tel">Teléfono: 02323 49-7227</h4> 
-            <br>
-            <h4 class="hora">Horarios: lunes a viernes de 8 a 12 y de 13 a 17 hs</h4>
-        </div>
-        <br>
-        <h4 class="copy">Copyright © 2021 Biblioteca San Luis Gonzaga. Todos los derechos reservados.</h4>
-        <img src="../imagenes/escudo_islg_chico.jpg" class="escudo" alt="Escudo Instituto San Luis Gonzaga"> <!--LOGO ISLG-->
-    </footer>
+    <footer>
+        <section class="container-fluid sec-footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                      <div class="card desc-box">
+                          <div class="card-body">
+                              <div class="card-title">Horarios</div>
+                              <div class="card-text" id="horarioLeft">
+                                .Lunes a viernes de 8 a 12 y de 13 a 17 hs
+                              </div>
+                              <br>
+                              <br>
+                      <a href="https://www.facebook.com/bibliotecaislg.nuestroslibros/"><img src="../imagenes/logo_face.png" alt="Facebook"></a>
+                      <a href="https://www.youtube.com/channel/UCxenjQ5adYyDehzcCoX1TDg"><img src="../imagenes/logo_youtube.png" alt="Youtube"></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card desc-box">
+                          <div class="card-body">
+                              <div class="card-title">Contacto</div>
+                              <div class="card-text" id="contactoLeft">
+                                  <div class="row">
+                                      <div class="col">
+                                          <span>Dirección: Av. Flandes 76, Jáuregui, Luján, Buenos Aires - Argentina</span>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col">
+                                          <span>Teléfono: 02323 497-227 </span>
+                                      </div>
+                                  </div>
+                                  <br>
+                                  <div class="row">
+                                      <div class="col">
+                                          <span><a href="mailto:bibliotecasanluisgonzaga@hotmail.com" id="mail-footer">Email: bibliotecasanluisgonzaga@hotmail.com</a></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col text-center">
+                    <img src="../imagenes/escudo_islg.jfif" class="logoISLG" alt="Escudo Instituto San Luis Gonzaga"> 
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="container-fluid sec-sub-footer">
+          <div class="container">
+                  <div class="copy">
+                      <span>.Copyright © 2021 Biblioteca San Luis Gonzaga. Todos los derechos reservados. // Sol Coria Web Desing</span>
+                  </div>
+          </div>
+      </section>
+      </footer>
+
 
     <script src="../js/bootstrap.js"></script>
 </body>
