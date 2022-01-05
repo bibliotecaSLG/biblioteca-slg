@@ -371,6 +371,11 @@ p{
     color: black;
 }
 
+/*Visitas*/
+#h2visitas{
+    font-size: 60px;
+    padding-left: 70px;
+}
 
 /*Contacto*/
 #h2contacto{
@@ -560,6 +565,9 @@ p{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    #h2visitas{
+        font-size: 30px;
+    }
     #h2maraton{
         font-size: 30px;
     }
@@ -728,6 +736,9 @@ p{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+    #h2visitas{
+        font-size: 40px;
+    }
     #h2maraton{
         font-size: 40px;
     }
@@ -737,7 +748,7 @@ p{
     }
 }
 
-/* DEsktop */
+/* Desktop */
 @media (min-width: 1024px){
     .main{
         padding: 20px;
